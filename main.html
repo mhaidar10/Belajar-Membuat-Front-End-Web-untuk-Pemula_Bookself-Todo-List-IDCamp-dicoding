@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LIST</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container1">
+        <h2>Todo List</h2>
+        <button id="clickMe">Tambah Buku</button>
+    </div>
+
+    <div class="popup">
+        <div class="container">
+            <div class="close">Close</div>
+            <form id="masukan-buku">
+                <h2>Masukan Buku</h2>
+                <div class="input-buku">
+                    <label for="judul-buku">Judul</label>
+                    <input type="text" id="judul-buku" required>
+                </div>
+                <div class="input-buku">
+                    <label for="penulis-buku">Penulis</label>
+                    <input type="text" id="penulis-buku" required>
+                </div>
+                <div class="input-buku">
+                    <label for="tahun-buku">Tahun</label>
+                    <input type="number" id="tahun-buku" required>
+                </div>
+                <div class="input_inline">
+                    <label for="inputBookIsComplete">Selesai dibaca</label>
+                    <input id="inputBookIsComplete" type="checkbox">
+                </div>
+                <button id="bookSubmit" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    
+    <div class="todo-content">
+        <div class="container2">
+            <h2>Cari Buku</h2>
+            <div class="cari-buku">   
+                <label for="cari-judul-buku">Judul</label>
+                <input type="text" id="cari-judul-buku">
+                <button id="book-cari" type="submit">Cari</button>
+            </div>
+        </div>
+        <div class="container3">
+            <h2 class="todo-header">Sudah Dibaca</h2>
+            <div class="book-list" id="sudah-dibaca">
+    
+            </div>
+        </div>
+        <div class="container4">
+            <h2 class="todo-header">Belum Dibaca</h2>
+            <div class="book-list" id="belum-dibaca"></div>
+            
+        </div>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
